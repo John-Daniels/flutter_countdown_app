@@ -174,10 +174,11 @@ class _CountdownPageState extends State<CountdownPage>
                 Padding(
                   padding: const EdgeInsets.only(top: 120),
                   child: Container(
-                    width: 140,
+                    width: 130,
                     child: TextButton(
                       onPressed: showMyDateRangePicker,
                       child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Icon(Icons.date_range),
                           SizedBox(
