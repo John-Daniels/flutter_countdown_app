@@ -101,9 +101,14 @@ class _CountdownPageState extends State<CountdownPage>
   @override
   void initState() {
     super.initState();
+    var currentDateTime = DateTime.now();
     controller = AnimationController(
       vsync: this,
-      duration: Duration(days: 10, hours: 10, seconds: 10),
+      duration: Duration(
+        days: currentDateTime.day,
+        hours: currentDateTime.hour,
+        seconds: currentDateTime.second,
+      ),
     );
 
     controller.addListener(() {
