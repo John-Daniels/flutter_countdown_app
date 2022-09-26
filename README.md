@@ -1,5 +1,7 @@
 # countdown_app
 
+![showcase](./showcase/screenshot1.png)
+
 A new Flutter project.
 
 ## Getting Started
